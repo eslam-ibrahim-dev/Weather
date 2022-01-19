@@ -1,0 +1,308 @@
+
+ html {
+    overflow-x: hidden
+  }
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    overflow-x: hidden
+  }
+  .totalcontainer {
+    width: 100vw;
+    position: relative !important;
+    height: 100vh;
+   
+  }
+  .container1 {
+    transform: scaleX(1.11);
+  }
+  .container2 {
+    transform: scaleX(1.25);
+  }
+  .layer-1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fed8c1;
+  }
+  
+  .layer-2 {
+    background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay2.svg")
+      no-repeat center center fixed;
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .layer-3 {
+    background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay3.svg")
+      no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+  }
+  .layer-4 {
+    background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay4.svg")
+      no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+  }
+  .layer-5 {
+    background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay5.svg")
+      no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.55s
+      both;
+  }
+  .layer-6 {
+    background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453881/codepen/lay6.svg")
+      no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s
+      both;
+  }
+  .layer-7 {
+    background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453881/codepen/lay7.svg")
+      no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.85s
+      both;
+  }
+  .layer-8 {
+    background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453882/codepen/lay8.svg")
+      no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+  }
+  .laya-please {
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0px;
+  }
+  
+  @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+nav{
+    background-color:rgba(12, 11, 9, 0.6) !important;
+}
+.nav-link{
+    font-size: 18px !important;
+    color: white !important;
+}
+.navbar-brand{
+    color: white !important;
+    font-size: 35px !important;
+    font-weight:500 !important;
+}
+#home{
+    position: absolute;
+    top:25%;
+    left:5%;
+    right:5%;
+    color: black;
+    bottom:20%;
+   
+}
+#home h1{
+    font-size: 30px;
+      color: #334756;
+}
+#home p{
+    font-size:20px;
+}
+@media all and (max-width:568px) {
+    #home h1{
+        font-size:25px;
+    }
+    #home p{
+        font-size: 14px;
+    }
+    #home{
+        text-align: center;
+    }
+    #home img{
+        width:50% !important;
+    }
+ 
+}
+@media screen and (min-width:569px) and (max-width:768px){
+    #home p{
+        font-size: 14px;
+    }
+    #home{
+        text-align: center;
+    }
+    #home img{
+        width:50% !important;
+    }
+}
+.display-temp{
+    padding: 50px !important;
+    font-weight: 300 !important;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+}
+.display-temp .search {width:50%;}
+@media screen and (min-width:360px) and (max-width:640px){
+    .display-temp .search{
+        width: 100% !important;
+    }
+
+}
+.display-temp #search-bar {
+    padding: 5px 15px;
+    border: 1px solid #3199ab;
+    border-radius: 20px;
+}
+
+.display-temp .temp-card {
+    width: 32%;
+    border-radius: 8px;
+}
+
+.display-temp .temp-card:first-of-type {
+    background-color: #3199ab;
+}
+.display-temp .temp-card:first-of-type h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.display-temp .temp-card:first-of-type .day-and-date {
+    background-color: #374850;
+}
+
+.display-temp .temp-card:nth-of-type(2) {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.display-temp .temp-card:nth-of-type(2), 
+.display-temp .temp-card:nth-of-type(3) {
+    background-color: #83bbc4;
+    transition: all 0.3s;
+}
+
+.display-temp .temp-card:nth-of-type(2):hover,
+.display-temp .temp-card:nth-of-type(3):hover {background-color: #3199ab;}
+
+.display-temp .temp-card .day-and-date {
+    background-color: #455a64;
+    color: #bfc1c8;
+    padding: 10px 25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.display-temp .temp-card .day-and-date p {margin: 0 !important;}
+
+.display-temp .temp-card #location {
+    font-size: 22px;
+    text-shadow: 0 0 1px #fff,  0 0 1px #fff
+}
+
+.display-temp .temp-card .temp-datails {
+    padding: 25px;
+    color: #fff;
+}
+
+.display-temp .temp-card .temp-datails #today-description,
+.display-temp .temp-card .temp-datails .nextDay-description {
+    font-size: 14px;
+    color: #455a64;
+    text-shadow: 0 0 1px #455a64,  0 0 1px #455a64;
+}
+/********* End Display Temp *********/ 
+
+
+/********* Start Download Mobile App *********/ 
+.download-app p {color: #455a64;}
+
+.download-app .btn {
+    border-radius: 25px;
+    padding: 10px 15px !important;
+}
+#mobile{
+    font-weight:600;
+    padding: 50px;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+}
+#mobile h2{
+    color: #37aec3;
+    font-size:60px;
+}
+#mobile p{
+    font-size:20px;
+}
+.btn-1{
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 10px 15px !important;
+    color: #fff;
+    background-color: #17a2b8;
+    border:1px solid #17a2b8;
+    margin: 10px 4px;
+    transition: all 0.5s;
+}
+.btn-1:hover{
+    background-color: white;
+    color:#17a2b8 ;
+}
+.button-fixed{
+    padding:15px;
+    color: white;
+    background-color:#17a2b8;
+    border-radius: 25px;
+    position: fixed;
+    bottom:10px;
+    left:85%;
+}
+footer{
+    background-color: #374850;
+    padding: 20px;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+}
+footer .fab{
+    color: white;
+    margin: 3px 4px;
+}
+footer span{
+    color: yellow;
+}
